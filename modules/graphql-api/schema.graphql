@@ -1,0 +1,16 @@
+type User {
+  id: Int!
+  name: String!
+  email: String!
+}
+
+type Game {
+  answer: [Int!]!
+}
+
+type Query {
+  allUsers: [User]!
+  userById(id: Int!): User
+
+  game: Game!
+}
